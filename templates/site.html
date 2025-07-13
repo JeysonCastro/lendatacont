@@ -10,25 +10,46 @@
 <body class="antialiased">
   <div class="min-h-screen bg-white">
     <header class="bg-white border-b border-gray-200 px-4 py-4">
-      <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <!-- Navegação esquerda -->
-        <nav class="hidden md:flex space-x-6 flex-1 justify-end">
-          <a href="#" class="text-gray-600 hover:text-blue-800">Início</a>
-          <a href="#" class="text-gray-600 hover:text-blue-800">Sobre</a>
-          <a href="#" class="text-gray-600 hover:text-blue-800">Soluções</a>
-        </nav>
-        <!-- Logo centralizado -->
-        <div class="flex-shrink-0 flex justify-center w-56">
-          <img src="/static/logo.png" alt="Logo Escorel" class="h-10 mx-auto">
-        </div>
-        <!-- Navegação direita -->
-        <nav class="hidden md:flex space-x-6 flex-1 justify-start">
-          <a href="#" class="text-gray-600 hover:text-blue-800">Especialidades</a>
-          <a href="#" class="text-gray-600 hover:text-blue-800">Blog</a>
-          <a href="#" class="text-gray-600 hover:text-blue-800">Contato</a>
-        </nav>
-      </div>
-    </header>
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+    <!-- Botão hamburguer para mobile -->
+    <div class="md:hidden flex items-center">
+      <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Logo centralizada -->
+    <div class="flex-shrink-0 flex justify-center w-56">
+      <img src="/static/logo.png" alt="Logo Lendata" class="h-10 mx-auto">
+    </div>
+
+    <!-- Menus para desktop -->
+    <nav class="hidden md:flex space-x-6 flex-1 justify-end">
+      <a href="#" class="text-gray-600 hover:text-blue-800">Início</a>
+      <a href="#" class="text-gray-600 hover:text-blue-800">Sobre</a>
+      <a href="#" class="text-gray-600 hover:text-blue-800">Soluções</a>
+    </nav>
+    <nav class="hidden md:flex space-x-6 flex-1 justify-start">
+      <a href="#" class="text-gray-600 hover:text-blue-800">Especialidades</a>
+      <a href="#" class="text-gray-600 hover:text-blue-800">Blog</a>
+      <a href="#" class="text-gray-600 hover:text-blue-800">Contato</a>
+    </nav>
+  </div>
+
+  <!-- Menu responsivo para mobile -->
+  <div id="mobile-menu" class="md:hidden hidden mt-4 px-4 space-y-2">
+    <a href="#" class="block text-gray-600 hover:text-blue-800">Início</a>
+    <a href="#" class="block text-gray-600 hover:text-blue-800">Sobre</a>
+    <a href="#" class="block text-gray-600 hover:text-blue-800">Soluções</a>
+    <a href="#" class="block text-gray-600 hover:text-blue-800">Especialidades</a>
+    <a href="#" class="block text-gray-600 hover:text-blue-800">Blog</a>
+    <a href="#" class="block text-gray-600 hover:text-blue-800">Contato</a>
+  </div>
+</header>
 
     <section class="relative bg-gradient-to-br from-gray-900 via-blue-900 to-blue-700 text-white py-20 px-4">
       <div class="max-w-7xl mx-auto text-center">
