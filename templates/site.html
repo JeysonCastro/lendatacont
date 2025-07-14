@@ -6,8 +6,14 @@
   <title>Lendata - Escritório de Contabilidade</title>
   <meta name="description" content="Escritório de Contabilidade em Porto Alegre | Lendata Contabilidade"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 5rem; /* ajuste conforme a altura do seu header */
+    }
+  </style>
 </head>
-<body class="antialiased">
+<body class="antialiased" style="scroll-behavior: smooth;">
   <div class="min-h-screen bg-white">
     <header class="bg-white border-b border-gray-200 px-4 py-4">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
@@ -24,8 +30,8 @@
     <!-- Menus para desktop - Esquerda -->
     <nav class="hidden md:flex space-x-6 flex-1 justify-end">
       <a href="#" class="text-gray-600 hover:text-blue-800">Início</a>
-      <a href="#" class="text-gray-600 hover:text-blue-800">Sobre</a>
-      <a href="#" class="text-gray-600 hover:text-blue-800">Soluções</a>
+      <a href="#sobre" class="text-gray-600 hover:text-blue-800">Sobre</a>
+      <a href="#servicos" class="text-gray-600 hover:text-blue-800">Soluções</a>
     </nav>
 
     <!-- Logo centralizada -->
@@ -35,9 +41,9 @@
 
     <!-- Menus para desktop - Direita -->
     <nav class="hidden md:flex space-x-6 flex-1 justify-start">
-      <a href="#" class="text-gray-600 hover:text-blue-800">Especialidades</a>
-      <a href="#" class="text-gray-600 hover:text-blue-800">Blog</a>
-      <a href="#" class="text-gray-600 hover:text-blue-800">Contato</a>
+      <a href="#especialidades" class="text-gray-600 hover:text-blue-800">Especialidades</a>
+      <a href="#blog" class="text-gray-600 hover:text-blue-800">Blog</a>
+      <a href="#contato" class="text-gray-600 hover:text-blue-800">Contato</a>
     </nav>
   </div>
 
@@ -69,7 +75,7 @@
       </div>
     </section>
 
-    <section class="py-16 px-4 bg-gray-50">
+    <section id="servicos" class="py-16 px-4 bg-gray-50">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-12">
           <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow hover:bg-primary/80 bg-blue-100 text-blue-800 mb-4">
@@ -149,7 +155,7 @@
       </div>
     </section>
 
-    <section class="py-16 px-4">
+    <section id="especialidades" class="py-16 px-4">
       <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div class="relative">
           <img src="static/escritorio.jpeg" alt="Profissional trabalhando" class="rounded-lg shadow-lg"/>
@@ -175,7 +181,7 @@
       </div>
     </section>
 
-    <section class="py-16 px-4 bg-gray-50">
+    <section id="sobre"class="py-16 px-4 bg-gray-50">
       <div class="max-w-7xl mx-auto text-center">
         <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent shadow hover:bg-primary/80 bg-blue-100 text-blue-800 mb-4">
           PASSO A PASSO
@@ -229,7 +235,7 @@
       </div>
     </section>
 
-    <section class="py-16 px-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+    <section id="blog" class="py-16 px-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-6">Aqui, a sua empresa é prioridade!</h2>
         <p class="text-xl mb-6 text-blue-100">
@@ -264,7 +270,7 @@
       </button>
     </form>
 
-    <footer class="bg-gray-900 text-white py-16 px-4">
+    <footer id="contato" class="bg-gray-900 text-white py-16 px-4">
       <div class="max-w-7xl mx-auto">
         <div class="grid md:grid-cols-4 gap-8 mb-8">
           <div>
