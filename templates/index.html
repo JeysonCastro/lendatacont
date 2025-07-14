@@ -11,7 +11,7 @@
   <style>
   .card-holographic {
     position: relative;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(23, 37, 84, 0.85); /* azul escuro com opacidade */
     border-radius: 1rem;
     backdrop-filter: blur(12px);
     box-shadow: 0 0 30px rgba(0, 170, 255, 0.1);
@@ -26,11 +26,21 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(130deg, #00c9ff, #92fe9d, #a18cd1, #fbc2eb);
+    background: linear-gradient(
+      130deg,
+      #60a5fa,   /* azul claro */
+      #818cf8,   /* roxo claro */
+      #f472b6,   /* rosa */
+      #38bdf8,   /* azul vibrante */
+      #a21caf,   /* roxo escuro */
+      #fbbf24,   /* amarelo */
+      #60a5fa    /* azul claro */
+    );
     background-size: 400% 400%;
-    animation: holoMove 15s ease infinite;
-    opacity: 0.2;
+    animation: holoMove 7s linear infinite;
+    opacity: 0.4; /* mais visível */
     z-index: 0;
+    pointer-events: none;
   }
 
   .card-holographic .card-content {
@@ -126,7 +136,7 @@
               <!-- CARD 1 -->
               <div class="swiper-slide px-4">
                 <div class="card-holographic p-6 h-64 transition transform hover:scale-105 shadow-xl">
-                  <div class="card-content h-full flex flex-col justify-between text-blue-900">
+                  <div class="card-content h-full flex flex-col justify-between text-white">
                     <div>
                       <h3 class="text-xl font-bold mb-2">Abertura de Empresa</h3>
                       <p class="text-sm">Ajudamos você a abrir sua empresa com agilidade e segurança.</p>
@@ -137,7 +147,7 @@
               <!-- CARD 2 -->
               <div class="swiper-slide px-4">
                 <div class="card-holographic p-6 h-64 transition transform hover:scale-105 shadow-xl">
-                  <div class="card-content h-full flex flex-col justify-between text-blue-900">
+                  <div class="card-content h-full flex flex-col justify-between text-white">
                     <div>
                       <h3 class="text-xl font-bold mb-2">Troca de Contabilidade</h3>
                       <p class="text-sm">Transfira sua contabilidade com total segurança e suporte.</p>
@@ -148,7 +158,7 @@
               <!-- CARD 3 -->
               <div class="swiper-slide px-4">
                 <div class="card-holographic p-6 h-64 transition transform hover:scale-105 shadow-xl">
-                  <div class="card-content h-full flex flex-col justify-between text-blue-900">
+                  <div class="card-content h-full flex flex-col justify-between text-white">
                     <div>
                       <h3 class="text-xl font-bold mb-2">Gestão Contábil</h3>
                       <p class="text-sm">Cuidamos das obrigações contábeis para sua tranquilidade.</p>
@@ -159,7 +169,7 @@
               <!-- CARD 4 -->
               <div class="swiper-slide px-4">
                 <div class="card-holographic p-6 h-64 transition transform hover:scale-105 shadow-xl">
-                  <div class="card-content h-full flex flex-col justify-between text-blue-900">
+                  <div class="card-content h-full flex flex-col justify-between text-white">
                     <div>
                       <h3 class="text-xl font-bold mb-2">Gestão Fiscal</h3>
                       <p class="text-sm">Esteja sempre em dia com impostos e tributos.</p>
@@ -170,7 +180,7 @@
               <!-- CARD 5 -->
               <div class="swiper-slide px-4">
                 <div class="card-holographic p-6 h-64 transition transform hover:scale-105 shadow-xl">
-                  <div class="card-content h-full flex flex-col justify-between text-blue-900">
+                  <div class="card-content h-full flex flex-col justify-between text-white">
                     <div>
                       <h3 class="text-xl font-bold mb-2">Gestão Pessoal</h3>
                       <p class="text-sm">Auxiliamos seu RH nas obrigações trabalhistas.</p>
